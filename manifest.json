@@ -1,0 +1,38 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/logo.png"
+      },
+      "default_title": "__MSG_extName__"
+   },
+   "background": {
+      "service_worker": "js/background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "js/content-script.js" ],
+      "matches": [ "*://discord.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "css": [ "css/elementUI.css", "css/custom.css" ],
+      "js": [ "js/web-script.js" ],
+      "matches": [ "*://discord.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extDes__",
+   "homepage_url": "https://chrome.google.com/webstore/detail/discord/ofjlibelpafmdhigfgggickpejfomamk",
+   "host_permissions": [ "*://discordmate.top/", "*://discord.com/*" ],
+   "icons": {
+      "128": "icons/logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaexPPJIYa/gtCchjEqNdcrr9LD8kNZTQSX9rik0EGBnvHXpwUyEz9UzxEn/DlLgmm0dwXBd+5Il6SX4gEaEW1d5TDqPetbhf93f4bRam/af0Uc5zUQRAhOMYG5vVatd10F83l1rkrGfCqQc9Sc7y990TYMJoK9cyC42sOlrBDYhetrqE4ZTVWaCCnLby4emtXo3oy8X4wMi9y3HuCz8AJxdtPnxNL5Fh37hu0QqeIFEd3nc7bPjyFc9FCSsjeiRsJtD4tzc7a3M3oB1QNE/xmwAc84ymXCj1xg2JKWvNE84TP8KG4gcFjbW4jhXs2fbqWtczUc6tfN/xjucQHz7cQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "permissions": [ "activeTab", "scripting", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "*://discord.com/*" ],
+      "resources": [ "/fonts/*", "/icons/*" ]
+   } ]
+}

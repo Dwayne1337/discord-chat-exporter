@@ -1,0 +1,8 @@
+{
+   "extDes": {
+      "message": "The extension that can provide Discord chat log export, batch export of video, images and such attachments in Discord chat history."
+   },
+   "extName": {
+      "message": "Discordmate - Discordチャットエクスポーター"
+   }
+}
