@@ -11,3 +11,7 @@ The extension requests messages directly from Discord using your existing sessio
 ## Development
 
 Load this folder unpacked via helium://extensions. Reload the extension after changes, then refresh Discord. No install or build step.
+
+## Privacy
+
+See [PRIVACY.md](PRIVACY.md) for the local data handling and permissions policy.
